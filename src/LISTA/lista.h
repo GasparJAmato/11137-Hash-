@@ -151,12 +151,11 @@ void *lista_iterador_elemento_actual(lista_iterador_t *iterador);
  */
 void lista_iterador_destruir(lista_iterador_t *iterador);
 
-
-
 /**
  * Devuelve la posicion del elemento pasado.
 */
-size_t lista_buscar_posicion(lista_t *lista,int (*comparador)(void *, void *), void *elemento);
+size_t lista_buscar_posicion(lista_t *lista, int (*comparador)(void *, void *),
+			     void *elemento);
 
 /**
  * Iterador interno. Recorre la lista e invoca la funcion con cada elemento de
